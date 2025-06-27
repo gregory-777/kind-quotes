@@ -170,9 +170,6 @@ nav {
 
 
 @media (max-width: 480px) {
-    * {
-        font-size: 0.5rem;
-    }
     .quote_day,.date {
         font-size: 0.1rem;
     }
