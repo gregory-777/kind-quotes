@@ -11,7 +11,9 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0rem calc((100vw - 1300px) / 2);
+    padding: 0 1rem;
+    max-width: 1300px;
+    margin: 0 auto;
 }
 .floating_text {
     background-color: rgba(58, 58, 58, .85);
@@ -80,12 +82,13 @@ nav {
     margin-right: auto;
     max-width: calc(100% - 3rem);
     padding: 2rem;
-    background-color: rgba(255, 255, 255, 0.025);;
+    background-color: rgb(37, 37, 37);;
     height: auto;
     border-radius: 2rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    box-shadow: 5px 5px 10px rgb(30, 30, 30);
 }
 .explore_title {
     background-color: transparent;
@@ -112,6 +115,9 @@ nav {
     margin-bottom: 18rem;
     position: relative;
 }
+.button_wrapper{
+    background-color: transparent;
+}
 .generate_button {
     align-self: flex-end;
     margin-top: auto;
@@ -135,16 +141,18 @@ nav {
 }
 .mission_title {
     font-weight: bold;
-    margin-left: 2rem;
+    margin-left: 2.5rem;
     font-size: 1.25rem;
     margin-bottom: 1rem;
 }
 .mission_description {
-    margin-left: 2rem;
-    margin-bottom: 5rem
+    margin-left: 2.5rem;
+    margin-bottom: 5rem;
+    font-weight: lighter;
+    color: rgba(255, 255, 255, 0.8);
 }
 .contact_bottom {
-    padding-left: 2rem;
+    padding-left: 2.5rem;
     padding-right: 2rem;
     padding-top: 1rem;
     font-size: 0.8rem;
