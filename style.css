@@ -30,6 +30,7 @@ nav {
     cursor: default;
     border: 2px solid rgba(76,76,76,.8);
     z-index: 1;
+    box-shadow: 7px 7px 10px rgb(25, 25, 25);
 }
 .qotd_button,.explore_button,.mission_button {
     border: none;
@@ -88,7 +89,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    box-shadow: 5px 5px 10px rgb(30, 30, 30);
+    box-shadow: 7px 7px 10px rgb(30, 30, 30);
 }
 .explore_title {
     background-color: transparent;
@@ -169,22 +170,25 @@ nav {
 
 
 @media (max-width: 480px) {
-  .quote_text,.explore_quote {
-    font-size: 1.2rem;
-    line-height: 1.5rem;
-  }
-  .explore_background,.description_text,.mission_description,.contact_bottom {
-    padding: 1rem;
-    margin: 1rem;
-  }
-  .contact_bottom {
-    font-size: 0.7rem;
-  }
-  .explore_container {
-    margin-bottom: 8rem;
-  }
-  .floating_text {
-    font-size: 0.9rem;
-    word-spacing: 0.4rem;
-  }
+    * {
+        font-size: 0.5rem;
+    }
+    .quote_text,.explore_quote {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    .explore_background,.description_text,.mission_description,.contact_bottom {
+        padding: 1rem;
+        margin: 1rem;
+    }
+    .contact_bottom {
+        font-size: 0.7rem;
+    }
+    .explore_container {
+        margin-bottom: 8rem;
+    }
+    .floating_text {
+        font-size: 0.9rem;
+        word-spacing: 0.4rem;
+    }
 }
