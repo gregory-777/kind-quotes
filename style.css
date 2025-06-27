@@ -11,93 +11,87 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: Orem calc((100vw - 1300px) / 2);
+    padding: 0rem calc((100vw - 1300px) / 2);
 }
 .floating_text {
     background-color: rgba(58, 58, 58, .85);
     word-spacing: 0.85rem;
     position: fixed;
-    margin-right: 2rem;
+    margin-right: 2.5rem;
     right: 0;
     top: 0;
-    padding: 0.7rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 0.7rem 1rem;
     font-weight: bold;
     border-radius: 3rem;
     margin-top: 2rem;
     text-align: center;
     cursor: default;
-    border-color: rgba(76,76,76,.8);
-    border-style: solid;
+    border: 2px solid rgba(76,76,76,.8);
     z-index: 1;
 }
 .qotd_button,.explore_button,.mission_button {
-    border-style: none;
+    border: none;
     background-color: transparent;
     font-weight: bold;
     font-size: 1.25rem;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding: 0.25rem 0.65rem 0.25rem 0.65rem;
     cursor: pointer;
 }
-.qotd_button:hover{
+.qotd_button:hover,.explore_button:hover,.mission_button:hover{
     background-color: red;
-    border-radius: 0.65rem;
-    color: #222222;
-}
-.explore_button:hover{
-    background-color: red;
-    border-radius: 0.65rem;
-    color: #222222;
-}
-.mission_button:hover{
-    background-color: red;
-    border-radius: 0.65rem;
+    border-radius: 0.85rem;
     color: #222222;
 }
 .quote_day,.date {
     display: flex;
     flex-direction: row;
-    font-size:1.4rem;
-    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
+    height: 4.75rem;
 }
 .quote_day {
-    margin-left: 2rem;
+    margin-left: 2.5rem;
 }
 .quote_text {
     font-style: italic;
     font-size: 1.6rem;
-    margin-bottom: 0.75rem;
-    margin-left: 2rem;
-    line-height: 2rem;
+    margin: 0 2rem 0.75rem 2.5rem;
+    line-height: 2.5rem;
+    margin-bottom: 1rem;
 }
 .author_text {
-    margin-bottom: 5rem;
-    margin-left: 2rem;
+    margin-left: 2.5rem;
+    height: 5rem;
+}
+.quote_container {
+    height: 12rem;
 }
 .description_text {
-    margin-left: 2rem;
+    margin-left: 2.5rem;
     margin-right: 2rem;
-    margin-bottom: 18rem;
+    height: 20rem;
     font-size: 1.2rem;
     word-spacing: 0.1rem;
     font-weight: lighter;
     color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 10rem;
 }
 .explore_background {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: calc(100% - 3rem);
     padding: 2rem;
     background-color: rgba(255, 255, 255, 0.025);;
-    height: 25rem;
+    height: auto;
     border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 .explore_title {
     background-color: transparent;
     font-weight: bold;
     font-size: 1.25rem;
-    margin-bottom: 1rem;
+    height: 2.5rem;
 }
 .explore_description {
     background-color: transparent;
@@ -106,22 +100,21 @@ nav {
 .explore_quote {
     background-color: transparent;
     font-size: 1.6rem;
-    line-height: 2rem;
+    line-height: 2.5rem;
     font-style: italic;
-    margin-bottom: 0.75rem;
+    margin-bottom: 1rem;
 }
 .explore_author {
     background-color: transparent;
-    margin-bottom: 4.5rem;
+    height: 5rem;
 }
 .explore_container {
     margin-bottom: 18rem;
     position: relative;
 }
 .generate_button {
-    position:absolute;
-    right: 4rem;
-    bottom: 2.2rem;
+    align-self: flex-end;
+    margin-top: auto;
     border-radius: 2rem;
     text-align: center;
     font-weight: bold;
@@ -129,9 +122,7 @@ nav {
     height: 2.25rem;
     width: 9.5rem;
     background-color: transparent;
-    border-style: solid;
-    border-color: white;
-    border-width: 0.1rem;
+    border: 2px solid white;
 }
 .generate_button:hover {
     background-color: red;
@@ -166,4 +157,26 @@ nav {
 .email {
     color: rgba(255, 255, 255, 0.75);
     background-color: transparent;
+}
+
+
+@media (max-width: 480px) {
+  .quote_text,.explore_quote {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+  .explore_background,.description_text,.mission_description,.contact_bottom {
+    padding: 1rem;
+    margin: 1rem;
+  }
+  .contact_bottom {
+    font-size: 0.7rem;
+  }
+  .explore_container {
+    margin-bottom: 8rem;
+  }
+  .floating_text {
+    font-size: 0.9rem;
+    word-spacing: 0.4rem;
+  }
 }
