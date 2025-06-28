@@ -195,6 +195,7 @@ nav {
     }
     .contact_bottom {
         font-size: 0.7rem;
+        padding: 1.5rem;
     }
     .explore_background {
         margin-bottom: 8rem;
@@ -213,15 +214,6 @@ nav {
         left: 1rem;
         
     }
-    nav {
-    height: rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap; /* optional: lets buttons wrap on smaller screens */
-    gap: 0.5rem;     /* optional: adds spacing between buttons */
-   
-  }
     .mission_description {
         font-size:0.85rem;
     }
