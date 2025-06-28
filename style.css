@@ -168,6 +168,9 @@ nav {
     color: rgba(255, 255, 255, 0.75);
     background-color: transparent;
 }
+.email:hover {
+    color: white;
+}
 .bi-threads,.bi-twitter-x,.x_link,.threads_link {
     background-color: transparent;
     color: rgba(255, 255, 255, 0.75);
@@ -177,7 +180,12 @@ nav {
 }
 .contact_links a {
     text-decoration: none;
+    color: rgba(255, 255, 255, 0.75);
 }
+.contact_links a:hover {
+    color: white;
+}
+
 
 @media (max-width: 480px) {
     .quote_day,.date {
