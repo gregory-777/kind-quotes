@@ -181,11 +181,11 @@ nav {
 .contact_links a {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.75);
+    background: transparent;
 }
 .contact_links a:hover {
     color: white;
 }
-
 
 @media (max-width: 480px) {
     .quote_day,.date {
