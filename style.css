@@ -159,16 +159,25 @@ nav {
     padding-top: 1rem;
     font-size: 0.8rem;
     color: rgba(255, 255, 255, 0.75);
-    background: rgba(255, 255, 255, 0.025);
-    height: 150px;
+    background: rgb(37, 37, 37);
+    height: 200px;
     width: 100%;
     bottom: 0;
 }
-.email {
+.email,.contact_text {
     color: rgba(255, 255, 255, 0.75);
     background-color: transparent;
 }
-
+.bi-threads,.bi-twitter-x,.x_link,.threads_link {
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.75);
+}
+.contact_links {
+    background-color: transparent;
+}
+.contact_links a {
+    text-decoration: none;
+}
 
 @media (max-width: 480px) {
     .quote_day,.date {
@@ -181,10 +190,11 @@ nav {
     }
     .description_text {
         font-size:0.85rem;
-        margin-top: 1rem;
+        margin-top: 2rem;
+        margin-bottom: 5rem;
     }
     .author_text {
-        height: 50rem;
+        height: 10rem;
     }
     .quote_box {
         margin-bottom:20rem;
@@ -212,7 +222,6 @@ nav {
         word-spacing: 0.1rem;
         width: 90%;
         left: 1rem;
-        
     }
     .mission_description {
         font-size:0.85rem;
