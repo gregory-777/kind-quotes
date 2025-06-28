@@ -16,7 +16,7 @@ nav {
     margin: 0 auto;
 }
 .floating_text {
-    background-color: rgba(58, 58, 58, .85);
+    background-color: rgba(40, 40, 40,.9);
     word-spacing: 0.85rem;
     position: fixed;
     margin-right: 2.5rem;
@@ -28,7 +28,7 @@ nav {
     margin-top: 2rem;
     text-align: center;
     cursor: default;
-    border: 2px solid rgba(76,76,76,.8);
+    border: 2px solid rgba(50,50,50,.85);
     z-index: 1;
     box-shadow: 7px 7px 10px rgb(25, 25, 25);
 }
@@ -83,7 +83,7 @@ nav {
     margin-right: auto;
     max-width: calc(100% - 3rem);
     padding: 2rem;
-    background-color: rgb(37, 37, 37);;
+    background-color: rgb(37, 37, 37);
     height: auto;
     border-radius: 2rem;
     display: flex;
@@ -100,6 +100,7 @@ nav {
 .explore_description {
     background-color: transparent;
     margin-bottom: 3rem;
+    font-weight:lighter;
 }
 .explore_quote {
     background-color: transparent;
@@ -171,24 +172,57 @@ nav {
 
 @media (max-width: 480px) {
     .quote_day,.date {
-        font-size: 0.1rem;
+        font-size: 1.05rem;
+        margin-bottom: auto;
+    }
+    .quote_day,.quote_text,.author_text,.description_text,.mission_description,.mission_title {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+    .description_text {
+        font-size:0.85rem;
+        margin-top: 1rem;
+    }
+    .author_text {
+        height: 50rem;
+    }
+    .quote_box {
+        margin-bottom:20rem;
     }
     .quote_text,.explore_quote {
-        font-size: 1rem;
-        line-height: 1.5rem;
-    }
-    .explore_background,.description_text,.mission_description,.contact_bottom {
-        padding: 1rem;
-        margin: 1rem;
+        font-size: 1.5rem;
+        line-height: 2.1rem;
     }
     .contact_bottom {
         font-size: 0.7rem;
     }
-    .explore_container {
+    .explore_background {
         margin-bottom: 8rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        align-self: center;
+        max-width: 95%;
+    }
+    .explore_description {
+        font-size:0.85rem;
     }
     .floating_text {
-        font-size: 0.9rem;
-        word-spacing: 0.4rem;
+        font-size: 0.5rem;
+        word-spacing: 0.1rem;
+        width: 90%;
+        left: 1rem;
+        
+    }
+    nav {
+    height: rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* optional: lets buttons wrap on smaller screens */
+    gap: 0.5rem;     /* optional: adds spacing between buttons */
+   
+  }
+    .mission_description {
+        font-size:0.85rem;
     }
 }
