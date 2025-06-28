@@ -164,20 +164,7 @@ nav {
     width: 100%;
     bottom: 0;
 }
-.email,.contact_text {
-    color: rgba(255, 255, 255, 0.75);
-    background-color: transparent;
-}
-.bi-threads,.bi-twitter-x,.x_link,.threads_link {
-    background-color: transparent;
-    color: rgba(255, 255, 255, 0.75);
-}
-.contact_links {
-    background-color: transparent;
-}
-.contact_links a {
-    text-decoration: none;
-}
+
 
 @media (max-width: 480px) {
     .quote_day,.date {
