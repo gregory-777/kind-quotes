@@ -6,6 +6,13 @@
     background-color: #222222;
     color: white;
 }
+html {
+    scroll-behavior: smooth;
+}
+#top {
+    position: absolute;
+    top: 0;
+}
 nav {
     height: 8rem;
     display: flex;
@@ -32,15 +39,16 @@ nav {
     z-index: 1;
     box-shadow: 7px 7px 10px rgb(25, 25, 25);
 }
-.qotd_button,.explore_button,.mission_button {
+.floating_text a {
     border: none;
     background-color: transparent;
     font-weight: bold;
     font-size: 1.25rem;
     padding: 0.25rem 0.65rem 0.25rem 0.65rem;
     cursor: pointer;
+    text-decoration: none;
 }
-.qotd_button:hover,.explore_button:hover,.mission_button:hover{
+.floating_text a:hover, .floating_text a:active {
     background-color: red;
     border-radius: 0.85rem;
     color: #222222;
@@ -49,7 +57,7 @@ nav {
     display: flex;
     flex-direction: row;
     font-size: 1.4rem;
-    height: 4.75rem;
+    height: 3.75rem;
 }
 .quote_day {
     margin-left: 2.5rem;
@@ -63,10 +71,10 @@ nav {
 }
 .author_text {
     margin-left: 2.5rem;
-    height: 5rem;
+    height: 4rem;
 }
 .quote_container {
-    height: 12rem;
+    height: 8rem;
 }
 .description_text {
     margin-left: 2.5rem;
@@ -187,7 +195,12 @@ nav {
     color: white;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 480px) and (hover: none) {
+    .floating_text a:active {
+        background-color: red;
+        border-radius: 0.85rem;
+        color: #222222;
+    }
     .quote_day,.date {
         font-size: 1.05rem;
         margin-bottom: auto;
