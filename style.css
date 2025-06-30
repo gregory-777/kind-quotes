@@ -13,6 +13,12 @@ html {
     position: absolute;
     top: 0;
 }
+#mid-part {
+    padding: 4rem;
+}
+#low-part {
+    padding: 4rem;
+}
 nav {
     height: 8rem;
     display: flex;
@@ -79,12 +85,11 @@ nav {
 .description_text {
     margin-left: 2.5rem;
     margin-right: 2rem;
-    height: 20rem;
     font-size: 1.2rem;
     word-spacing: 0.1rem;
     font-weight: lighter;
     color: rgba(255, 255, 255, 0.8);
-    margin-bottom: 10rem;
+    margin-bottom: 13rem;
 }
 .explore_background {
     margin-left: auto;
@@ -122,7 +127,7 @@ nav {
     height: 5rem;
 }
 .explore_container {
-    margin-bottom: 18rem;
+    margin-bottom: 15rem;
     position: relative;
 }
 .button_wrapper{
@@ -211,12 +216,10 @@ nav {
     }
     .description_text {
         font-size:0.85rem;
-        margin-top: 2rem;
+        margin-top: 4rem;
         margin-bottom: 5rem;
     }
-    .author_text {
-        height: 10rem;
-    }
+   
     .quote_box {
         margin-bottom:20rem;
     }
