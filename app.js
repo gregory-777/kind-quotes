@@ -32,12 +32,13 @@ document.addEventListener("DOMContentLoaded", () => {
     .catch(error => console.error("Error loading quotes:", error));
     function getDaySinceReset() {
         const now = new Date();
-        const reset = new Date(2025, 5, 1);
+        const reset = new Date(2025, 6, 1);
         const diff = now - reset;
         const oneDay = 1000 * 60 * 60 * 24;
         return Math.floor(diff / oneDay);
     }
-    function generateNewOnClick() {
+});
+ function generateNewOnClick() {
         const randomIndex = Math.floor(Math.random() * quotesData.length);
         const displayedText = document.querySelector(".explore_quote").textContent.trim();
         const cleanText = displayedText.replace(/^"(.*)"$/, '$1');
@@ -53,6 +54,3 @@ document.addEventListener("DOMContentLoaded", () => {
             document.getElementsByClassName("explore_author")[0].textContent = `\u2014 ${quotesData[randomIndex].author}`;
         }
     }
-    quoteElem.textContent = `"${quotesData[randomIndex].text}"`;
-    authorElem.textContent = `\u2014 ${quotesData[randomIndex].author}`;
-});
