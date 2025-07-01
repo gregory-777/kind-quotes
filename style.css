@@ -9,14 +9,14 @@
 html {
     scroll-behavior: smooth;
 }
-#top {
+#QOTD {
     position: absolute;
     top: 0;
 }
-#mid-part {
+#Explore {
     padding: 4rem;
 }
-#low-part {
+#Mission {
     padding: 4rem;
 }
 nav {
@@ -89,7 +89,7 @@ nav {
     word-spacing: 0.1rem;
     font-weight: lighter;
     color: rgba(255, 255, 255, 0.8);
-    margin-bottom: 13rem;
+    margin-bottom: 10rem;
 }
 .explore_background {
     margin-left: auto;
@@ -217,7 +217,7 @@ nav {
     .description_text {
         font-size:0.85rem;
         margin-top: 4rem;
-        margin-bottom: 5rem;
+        margin-bottom: 1rem;
     }
    
     .quote_box {
